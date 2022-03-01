@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.to-do-list-container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to top,#e66465, #9198e5);
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+}
+
+#to-do-input{
+    height: 30px;
+    width: 300px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.to-do-list-form button{
+    position: relative;
+    margin-left: -30px;
+}
+.to-do-add{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(83, 83, 83);
+    color: rgb(243, 243, 243);
+    outline: none;
+    border: 1px solid rgb(83, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    transition: 300ms ease;
+    cursor: pointer;
+}
+
+.to-do-list{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.to-do-list-form{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.to-do-list-items > *{
+    min-height: 30px;
+    max-width: 330px;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0px 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    color: rgb(75, 75, 75);
+    justify-content: space-between;
+}
+
+.to-do-list-items #checkbox{
+    height: 10px;
+    padding: 20px;
+}
+
+.to-do-list-items li i{
+    cursor: pointer;
+    color: rgb(110, 110, 110);
+}
+
+.to-do-list-items{
+    width: auto;
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 0px 10px;
+    
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background: #3f3f3f67;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top,#e664648e, #9198e585);
+    border-radius: 20px;
+}
+
+.greeting{
+    color: white;
+}
